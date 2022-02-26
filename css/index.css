@@ -1,0 +1,186 @@
+/* GLOBAL  */
+*{
+    /* thuộc tính này làm cho không bị rớt hình khi sử dụng thuộc tính float  */
+    box-sizing: border-box; 
+}
+html,body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.clean{
+    clear: both;
+}
+h2{
+    /* tạo font-size trước cho trng web khi thấy các phần tiêu đề có kích thước chữ giống nhau  */
+    font-size: 25px;
+     text-transform: uppercase; /*tạo in đậm  */
+     text-align: center;
+     /* padding-top: 50px; */
+     margin-bottom: 16px;
+}
+.line {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+/* HEADER  */
+.header__left{
+    float: left;
+}
+.header__right{
+    float: right;
+    margin-right: 120px;
+}
+.header__menu ul{
+    /* bỏ dấu chấm tròn  */
+    list-style: none;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: center;
+    padding: 15px 0;
+
+}
+.header__menu ul li{
+    /* chuyển đổi text block thành inline    */
+    display: inline;
+    
+}
+.header__menu ul a{
+    text-decoration: none;
+    color: #656063;
+    text-transform: uppercase;
+    /* khoảng cách giữa các chữ trên thanh menu      */
+   
+    /* độ đậm của chữ  */
+    font-weight: bold;
+    /* kích thước chữ  */
+    font-size: 1.13vw;
+    padding:0 0.3em;
+
+}
+.header__menu ul li:hover{
+     /* tạo đường đỏ dưới thanh menu  */
+     border-bottom: 3px solid #831C25;
+}
+/* khi vào trang web luôn có gạch đỏ dưới chân chữ trang chủ */
+.header__menu ul .active{
+    border-bottom: 3px solid #831C25; 
+}
+/* carousel  */
+.carousel{
+    background-image: url(../img/c.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+/* INTRO  */
+.intro p{
+    text-align: center;
+    color: #656063;
+    /* khoảng cách các hàng chữ      */
+    line-height: 25px;
+    /* padding là khoảng cách nội dung so với viềng      */
+    padding: 0 20px;
+    margin: 0;
+}
+/* PROGRAM  */
+.program__item{
+    /* thuộc tính float sắp xếp các hình ảnh thành 1 hàng  */
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.program__item img{
+    width: 100%;
+}
+.program__item h3{
+    color: #831C25;
+    font-size: 16px;
+     text-transform: uppercase; /*viết hoa các ký tự  */
+    margin: 10px 0 5px;
+}
+.program__item p{
+    color: #656063;
+    margin: 0;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+/* NEW & even */
+.news{
+    margin-bottom: 20px;
+}
+.dau__line{
+    font-size: 30px;
+}
+.news__left, .news__right{
+    float: left;
+    width: 50%;
+    /* xét khoản cách hai bên trái phải  */
+    padding: 0 5px;
+}
+/* .news__item .news__left{
+    padding: 5px;
+} */
+.news__text img{
+    width: 100%;
+    display: block;
+}
+/* cần khai báo relative đề sử dụng được cho thuộc tính position absolute  */
+.news__text{
+    
+    position: relative;
+}
+.news__text p{
+    /* ghi đè chứ lên phần hình ảnh  */
+    position: absolute;
+    /* chỉnh dòng chữ ở dưới phân bottom cách lên 10px  */
+    bottom: 8px;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
+    /* chỉnh qua hệ rgba để làm mờ  */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    /* padding ở đây là dòng chữ cách background-color trên dưới 15px và trái phải 10px */
+    padding: 15px 10px;
+    margin: 0;   
+}
+.news__left .news__text p{
+    font-size: 24px;
+}
+.news__small-item {
+    float: left;
+    width: 50%;
+    padding:0 7px 10px;
+}
+.news__text hr{
+    margin: 0;
+    height: 4px;
+    background-color:#831C25;
+    margin-top: 3px;
+}
+
+/* FOOTER  */
+.footer{
+    background-color: #831C25;
+    color: white;
+    padding: 15px 0 15px 15px;
+}
+.footer img{
+    float: left;
+    width: 10%;
+    
+}
+.footer p{
+    float:right;
+    width: 50%;
+}
+.news h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
